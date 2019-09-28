@@ -4,7 +4,7 @@ body, html {
 }
 
 body {
-    background-image: url("forest.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('forest.jpg');
     height: 100%;
     background-size: cover;
     background-position: center;
@@ -17,7 +17,7 @@ h1 {
     font-size: 72pt;
     font-weight: bold;
     color: #313833;
-    text-shadow: -2px 0 gray, 0 2px gray, 2px 0 gray, 0 -2px gray;
+    text-shadow: -4px 0 gray, 0 4px gray, 4px 0 gray, 0 -4px gray;
     text-align: center;
     padding-top: 50px
 }
@@ -31,16 +31,19 @@ h2 {
 
 .btn-primary {
     background-color: #577eab !important;
-    color: rgb(220, 220, 220)
+    opacity: .75;
 }
 
 a {
     font-size: 28pt !important;
+    color: white !important;
 }
 
-#navgroup {
-    margin: auto;
+#navparent {
+    min-height: 100%;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
+    margin-top: 10%;
 }
